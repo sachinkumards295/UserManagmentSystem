@@ -1,0 +1,27 @@
+<div class="login-page">
+    <form [formGroup]="myForm">
+      <!-- Email input -->
+      <div class="fs-19 text-center">
+            Login
+      </div>
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" formControlName="email" class="form-control" />
+        <label class="form-label" for="form2Example1">Email address</label>
+      </div>
+    
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" formControlName="password" class="form-control" />
+        <label class="form-label" for="form2Example2">Password</label>
+      </div>
+    
+      <!-- 2 column grid layout for inline styling -->
+     
+    
+      <!-- Submit button -->
+      <button type="button" class="btn btn-primary btn-block mb-4 text-center" (click)="Validation()">Sign in</button>
+    
+      <!-- Register buttons -->
+    
+    </form>
+    </div>

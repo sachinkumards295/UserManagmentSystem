@@ -1,0 +1,44 @@
+
+
+<table >
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+      <th>password</th>
+    </tr>
+    <tr *ngFor="let item of userLoginData">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.phone}}</td>
+      <td> <button class="btn btn-primary" (click)="updateUserDetails()">Update</button> </td>
+      <td><button class="btn btn-secondary">View</button> </td>
+      <td><button class="btn">Delete</button> </td>
+    </tr>
+   
+  </table>
+
+
+<div>
+    <form [formGroup]="userForm">
+        <div class="fs-19 text-center">
+            Edit Details
+      </div>
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" formControlName="name" class="form-control" />
+        <label class="form-label" for="form2Example1">name</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" formControlName="email" class="form-control" />
+        <label class="form-label" for="form2Example1">email</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" formControlName="phone" class="form-control" />
+        <label class="form-label" for="form2Example1">phone</label>
+      </div>
+      <button class="btn btn-primary" (click)="submitEditForm()">Save Changes</button>
+    </form>
+</div>
+
+  
